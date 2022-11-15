@@ -65,3 +65,13 @@ Project Organization
 ## License
 
 MIT License
+
+## DDoge
+Build the Dockerfile useing
+``` bin
+docker build . -t ddoge/rl-jobshop
+```
+then you can start the container useing the follwoing command, just be sure to replace <path_to_this_repository> with the path to this repository.
+``` bin
+docker run --name rl-jobshop -v <path_to_this_repository>:jobshop/ -it ddoge/rl-jobshop
+```
