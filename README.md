@@ -75,3 +75,13 @@ then you can start the container useing the follwoing command, just be sure to r
 ``` bin
 docker run --name rl-jobshop -v <path_to_this_repository>:jobshop/ -it ddoge/rl-jobshop
 ```
+
+When you exit the container you might need to start it again:
+``` bin
+docker start rl-jobshop
+```
+
+And conect to it again:
+``` bin
+docker exec -it rl-jobshop /bin/bash
+```
