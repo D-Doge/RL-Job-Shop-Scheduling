@@ -30,4 +30,6 @@ RUN python3.7 -m pip install --upgrade pip
 COPY ./requirements.txt /tmp
 RUN cd /tmp && python3.7 -m pip install -r requirements.txt
 
+RUN apt-get install ffmpeg libsm6 libxext6  -y
+
 CMD ["/bin/bash"]
