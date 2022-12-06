@@ -44,6 +44,7 @@ class JssEnv(gym.Env):
         self.solution = None
         self.last_time_step = float('inf')
         self.last_solution = None
+        self.stepList = None
         self.current_time_step = float('inf')
         self.next_time_step = list()
         self.next_jobs = list()
@@ -140,6 +141,7 @@ class JssEnv(gym.Env):
         self.legal_actions[self.jobs] = False
         # used to represent the solution
         self.solution = np.full((self.jobs, self.machines), -1, dtype=np.int)
+        self.stepList = list()
         self.time_until_available_machine = np.zeros(self.machines, dtype=np.int)
         self.time_until_finish_current_op_jobs = np.zeros(self.jobs, dtype=np.int)
         self.todo_time_step_job = np.zeros(self.jobs, dtype=np.int)
@@ -232,6 +234,7 @@ class JssEnv(gym.Env):
                             time_step += 1
 
     def step(self, action: int):
+        self.stepList.append(action)
         reward = 0.0
         if action == self.jobs:
             self.nb_machine_legal = 0

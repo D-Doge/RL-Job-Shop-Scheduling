@@ -23,6 +23,8 @@ from ray.rllib.models import ModelCatalog
 
 from ray.tune.utils import flatten_dict
 from ray.rllib.utils.framework import try_import_tf
+from pathlib import Path
+import imageio
 
 tf1, tf, tfv = try_import_tf()
 
@@ -162,11 +164,32 @@ def train_func():
         wandb.log(log)
         # wandb.config.update(config_update, allow_val_change=True)
     # trainer.export_policy_model("/home/jupyter/JSS/JSS/models/")
-    best_makespan, best_solution = ray.get(storage.get_best_solution.remote())
+    best_makespan, best_solution, stepList = ray.get(storage.get_best_solution.remote())
     print(best_makespan)
-    print(best_solution)
     ray.shutdown()
+    print("------------------------------------------------------------------------------------------ Training done")
+    renderSolution(stepList)
 
+def renderSolution(stepList:list):
+    env = gym.make(
+            "JSSEnv:jss-v1",
+            env_config={
+                "instance_path": f"{str(Path(__file__).parent.absolute())}/../JSSEnv/envs/instances/ta41"
+            },
+        )
+    env.reset()
+        # for every machine give the jobs to process in order for every machine
+    images = []
+
+    for i in range(len(stepList)):
+        env.step(stepList[i])
+        temp_image = env.render().to_image()
+        images.append(imageio.imread(temp_image))
+        print(i)
+            
+    temp_image = env.render().to_image()
+    images.append(imageio.imread(temp_image))
+    imageio.mimsave("test.gif", images)
 
 if __name__ == "__main__":
     train_func()
