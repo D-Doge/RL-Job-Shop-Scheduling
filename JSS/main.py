@@ -152,7 +152,7 @@ def train_func():
     config.pop('entropy_end', None)
 
     stop = {
-        "time_total_s": 10 * 60,
+        "time_total_s": 3 * 60,
     }
 
     start_time = time.time()
@@ -166,6 +166,7 @@ def train_func():
     # trainer.export_policy_model("/home/jupyter/JSS/JSS/models/")
     best_makespan, best_solution, stepList = ray.get(storage.get_best_solution.remote())
     print(best_makespan)
+    print("------------------------------------------------------------------------------------------ Floppa")
     ray.shutdown()
     print("------------------------------------------------------------------------------------------ Training done")
     renderSolution(stepList)
@@ -174,7 +175,7 @@ def renderSolution(stepList:list):
     env = gym.make(
             "JSSEnv:jss-v1",
             env_config={
-                "instance_path": f"{str(Path(__file__).parent.absolute())}/../JSSEnv/envs/instances/ta41"
+                "instance_path": f"{str(Path(__file__).parent.absolute())}/instances/ta41"
             },
         )
     env.reset()
@@ -192,4 +193,5 @@ def renderSolution(stepList:list):
     imageio.mimsave("test.gif", images)
 
 if __name__ == "__main__":
+    print("HIIIIIIIIIIIIIIIIIIII")
     train_func()

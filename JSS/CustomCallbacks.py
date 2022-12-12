@@ -21,7 +21,7 @@ class Storage:
             self.stepList = stepList
 
     def get_best_solution(self):
-        return self.best_makespan, self.best_solution
+        return self.best_makespan, self.best_solution, self.stepList
 
 
 class CustomCallbacks(DefaultCallbacks):
