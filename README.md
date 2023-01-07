@@ -73,7 +73,7 @@ docker build . -t ddoge/rl-jobshop
 ```
 then you can start the container useing the follwoing command, just be sure to replace <path_to_this_repository> with the path to this repository.
 ``` bin
-docker run --name rl-jobshop -v <path_to_this_repository>:jobshop/ -it ddoge/rl-jobshop
+docker run --name rl-jobshop --gpus all -v <path_to_this_repository>:jobshop/ -it ddoge/rl-jobshop
 ```
 
 When you exit the container you might need to start it again:
