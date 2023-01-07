@@ -26,6 +26,8 @@ from ray.rllib.utils.framework import try_import_tf
 from pathlib import Path
 import imageio
 
+import datetime
+
 tf1, tf, tfv = try_import_tf()
 
 
@@ -152,12 +154,17 @@ def train_func():
     config.pop('entropy_end', None)
 
     stop = {
-        "time_total_s": 3 * 60,
+        "time_total_s": 20 * 60,
     }
 
     start_time = time.time()
     trainer = PPOTrainer(config=config)
+    #trainer.restore("/root/ray_results/PPO_jss_env_2022-12-13_13-10-51jiby2hn_/checkpoint_32/checkpoint-32")
+    epoch = 0
+    print(datetime.datetime.now(), "Training start---------------------------------------------------------------------------------------------------------------------------------------")
     while start_time + stop['time_total_s'] > time.time():
+        epoch = epoch + 1
+        print("Epoch: ", epoch)
         result = trainer.train()
         result = wandb_tune._clean_log(result)
         log, config_update = _handle_result(result)
@@ -169,7 +176,8 @@ def train_func():
     print("------------------------------------------------------------------------------------------ Floppa")
     ray.shutdown()
     print("------------------------------------------------------------------------------------------ Training done")
-    renderSolution(stepList)
+    #renderSolution(stepList)
+    #print(trainer.save())
 
 def renderSolution(stepList:list):
     env = gym.make(
@@ -191,6 +199,7 @@ def renderSolution(stepList:list):
     temp_image = env.render().to_image()
     images.append(imageio.imread(temp_image))
     imageio.mimsave("test.gif", images)
+
 
 if __name__ == "__main__":
     print("HIIIIIIIIIIIIIIIIIIII")

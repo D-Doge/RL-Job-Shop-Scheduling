@@ -6,6 +6,7 @@ from ray.rllib.env import BaseEnv
 from ray.rllib.evaluation import MultiAgentEpisode, RolloutWorker
 from ray.rllib.policy import Policy
 from ray.rllib.utils.typing import PolicyID
+import datetime
 
 @ray.remote
 class Storage:
@@ -19,6 +20,8 @@ class Storage:
             self.best_solution = solution
             self.best_makespan = makespan
             self.stepList = stepList
+            print(datetime.datetime.now(), makespan)
+            #print(makespan)
 
     def get_best_solution(self):
         return self.best_makespan, self.best_solution, self.stepList
