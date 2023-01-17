@@ -159,7 +159,7 @@ def train_func():
 
     start_time = time.time()
     trainer = PPOTrainer(config=config)
-    #trainer.restore("/root/ray_results/PPO_jss_env_2022-12-13_13-10-51jiby2hn_/checkpoint_32/checkpoint-32")
+    #trainer.restore("/root/ray_results/PPO_jss_env_2023-01-09_23-24-10wqswfphl/checkpoint_200/checkpoint-200")
     epoch = 0
     print(datetime.datetime.now(), "Training start---------------------------------------------------------------------------------------------------------------------------------------")
     while start_time + stop['time_total_s'] > time.time():

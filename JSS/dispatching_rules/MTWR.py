@@ -2,8 +2,9 @@ import random
 import wandb
 import gym
 import numpy as np
+import multiprocessing as mp
 
-from JSS.default_config import default_config
+
 
 
 def MTWR_worker(default_config):
@@ -29,7 +30,49 @@ def MTWR_worker(default_config):
     env.reset()
     make_span = env.last_time_step
     wandb.log({"nb_episodes": 1, "make_span": make_span})
+    print("Makespan:", make_span)
 
 
 if __name__ == "__main__":
+    default_config = {
+        'env': 'jss_env',
+        'seed': 0,
+        'framework': 'tf',
+        'log_level': 'WARN',
+        'num_gpus': 1,
+        'instance_path': '../instances/ta41',
+        'evaluation_interval': None,
+        'metrics_smoothing_episodes': 2000,
+        'gamma': 1.0,
+        'num_workers': mp.cpu_count(),
+        'layer_nb': 2,
+        'train_batch_size': mp.cpu_count() * 4 * 704,
+        'num_envs_per_worker': 4,
+        'rollout_fragment_length': 704,  # TO TUNE
+        'sgd_minibatch_size': 33000,
+        'layer_size': 319,
+        'lr': 0.0006861,  # TO TUNE
+        'lr_start': 0.0006861,  # TO TUNE
+        'lr_end': 0.00007783,  # TO TUNE
+        'clip_param': 0.541,  # TO TUNE
+        'vf_clip_param': 26,  # TO TUNE
+        'num_sgd_iter': 12,  # TO TUNE
+        "vf_loss_coeff": 0.7918,
+        "kl_coeff": 0.496,
+        'kl_target': 0.05047,  # TO TUNE
+        'lambda': 1.0,
+        'entropy_coeff': 0.0002458,  # TUNE LATER
+        'entropy_start': 0.0002458,
+        'entropy_end': 0.002042,
+        'entropy_coeff_schedule': None,
+        "batch_mode": "truncate_episodes",
+        "grad_clip": None,
+        "use_critic": True,
+        "use_gae": True,
+        "shuffle_sequences": True,
+        "vf_share_layers": False,
+        "observation_filter": "NoFilter",
+        "simple_optimizer": False,
+        "_fake_gpus": False,
+    }
     MTWR_worker(default_config)
