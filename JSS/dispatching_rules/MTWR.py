@@ -27,6 +27,7 @@ def MTWR_worker(default_config):
         MTWR_action = np.argmin(remaining_time)
         assert legal_actions[MTWR_action]
         state, reward, done, _ = env.step(MTWR_action)
+        print(legal_actions)
     env.reset()
     make_span = env.last_time_step
     wandb.log({"nb_episodes": 1, "make_span": make_span})
@@ -40,7 +41,7 @@ if __name__ == "__main__":
         'framework': 'tf',
         'log_level': 'WARN',
         'num_gpus': 1,
-        'instance_path': '../instances/ta41',
+        'instance_path': '../instances/rl_50',
         'evaluation_interval': None,
         'metrics_smoothing_episodes': 2000,
         'gamma': 1.0,
