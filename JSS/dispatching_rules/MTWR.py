@@ -41,7 +41,7 @@ if __name__ == "__main__":
         'framework': 'tf',
         'log_level': 'WARN',
         'num_gpus': 1,
-        'instance_path': '../instances/rl_50',
+        'instance_path': '../instances/rl250',
         'evaluation_interval': None,
         'metrics_smoothing_episodes': 2000,
         'gamma': 1.0,
