@@ -75,7 +75,7 @@ def train_func():
         'framework': 'tf',
         'log_level': 'WARN',
         'num_gpus': 1,
-        'instance_path': 'instances/ta44',
+        'instance_path': 'instances/ta50',
         'evaluation_interval': None,
         'metrics_smoothing_episodes': 2000,
         'gamma': 1.0,
@@ -159,11 +159,11 @@ def train_func():
 
     start_time = time.time()
     trainer = PPOTrainer(config=config)
-    trainer.restore("/root/ray_results/PPO_jss_env_2023-01-24_08-36-173mxpd4xb/checkpoint_216/checkpoint-216")
+    trainer.restore("/root/ray_results/PPO_jss_env_2023-01-30_18-34-35mfc2hfe7/checkpoint_203/checkpoint-203")
     epoch = 0
     print(datetime.datetime.now(), "Training start---------------------------------------------------------------------------------------------------------------------------------------")
-    #while start_time + stop['time_total_s'] > time.time():
-    while epoch < 1001:
+    while start_time + stop['time_total_s'] > time.time():
+    #while epoch < 1001:
         epoch = epoch + 1
         print("Epoch: ", epoch)
         result = trainer.train()
