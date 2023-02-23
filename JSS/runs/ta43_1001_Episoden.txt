@@ -1,0 +1,1444 @@
+wandb: W&B syncing is set to `offline` in this directory.  Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+2023-01-24 15:54:27,606 INFO services.py:1173 -- View the Ray dashboard at http://127.0.0.1:8265
+2023-01-24 15:54:27,608 WARNING services.py:1640 -- WARNING: The object store is using /tmp instead of /dev/shm because /dev/shm has only 67084288 bytes available. This may slow down performance! You may be able to free up space by deleting files in /dev/shm or terminating any running plasma_store_server processes. If you are inside a Docker container, you may need to pass an argument with the flag '--shm-size' to 'docker run'.
+2023-01-24 15:54:29,400 INFO trainer.py:591 -- Tip: set framework=tfe or the --eager flag to enable TensorFlow eager execution
+2023-01-24 15:54:29,400 INFO trainer.py:618 -- Current log_level is WARN. For more information, set 'log_level': 'INFO' / 'DEBUG' or use the -v and -vv flags.
+(pid=6645) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6645) Instructions for updating:
+(pid=6645) non-resource variables are not supported in the long term
+(pid=6648) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6648) Instructions for updating:
+(pid=6648) non-resource variables are not supported in the long term
+(pid=6653) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6653) Instructions for updating:
+(pid=6653) non-resource variables are not supported in the long term
+(pid=6599) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6599) Instructions for updating:
+(pid=6599) non-resource variables are not supported in the long term
+(pid=6651) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6651) Instructions for updating:
+(pid=6651) non-resource variables are not supported in the long term
+(pid=6642) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6642) Instructions for updating:
+(pid=6642) non-resource variables are not supported in the long term
+(pid=6647) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6647) Instructions for updating:
+(pid=6647) non-resource variables are not supported in the long term
+(pid=6643) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6643) Instructions for updating:
+(pid=6643) non-resource variables are not supported in the long term
+(pid=6649) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6649) Instructions for updating:
+(pid=6649) non-resource variables are not supported in the long term
+(pid=6646) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6646) Instructions for updating:
+(pid=6646) non-resource variables are not supported in the long term
+(pid=6652) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6652) Instructions for updating:
+(pid=6652) non-resource variables are not supported in the long term
+(pid=6650) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6650) Instructions for updating:
+(pid=6650) non-resource variables are not supported in the long term
+(pid=6583) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6583) Instructions for updating:
+(pid=6583) non-resource variables are not supported in the long term
+(pid=6594) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6594) Instructions for updating:
+(pid=6594) non-resource variables are not supported in the long term
+(pid=6585) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6585) Instructions for updating:
+(pid=6585) non-resource variables are not supported in the long term
+(pid=6589) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6589) Instructions for updating:
+(pid=6589) non-resource variables are not supported in the long term
+(pid=6644) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6644) Instructions for updating:
+(pid=6644) non-resource variables are not supported in the long term
+(pid=6587) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6587) Instructions for updating:
+(pid=6587) non-resource variables are not supported in the long term
+(pid=6588) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6588) Instructions for updating:
+(pid=6588) non-resource variables are not supported in the long term
+(pid=6590) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6590) Instructions for updating:
+(pid=6590) non-resource variables are not supported in the long term
+(pid=6596) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6596) Instructions for updating:
+(pid=6596) non-resource variables are not supported in the long term
+(pid=6595) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6595) Instructions for updating:
+(pid=6595) non-resource variables are not supported in the long term
+(pid=6601) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6601) Instructions for updating:
+(pid=6601) non-resource variables are not supported in the long term
+(pid=6591) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6591) Instructions for updating:
+(pid=6591) non-resource variables are not supported in the long term
+(pid=6597) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6597) Instructions for updating:
+(pid=6597) non-resource variables are not supported in the long term
+(pid=6586) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6586) Instructions for updating:
+(pid=6586) non-resource variables are not supported in the long term
+(pid=6598) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6598) Instructions for updating:
+(pid=6598) non-resource variables are not supported in the long term
+(pid=6582) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6582) Instructions for updating:
+(pid=6582) non-resource variables are not supported in the long term
+(pid=6592) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6592) Instructions for updating:
+(pid=6592) non-resource variables are not supported in the long term
+(pid=6584) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6584) Instructions for updating:
+(pid=6584) non-resource variables are not supported in the long term
+(pid=6593) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=6593) Instructions for updating:
+(pid=6593) non-resource variables are not supported in the long term
+(pid=7108) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+(pid=7108) Instructions for updating:
+(pid=7108) non-resource variables are not supported in the long term
+(pid=6645) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6645) Instructions for updating:
+(pid=6645) If using Keras pass *_constraint arguments to layers.
+(pid=6653) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6653) Instructions for updating:
+(pid=6653) If using Keras pass *_constraint arguments to layers.
+(pid=6599) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6599) Instructions for updating:
+(pid=6599) If using Keras pass *_constraint arguments to layers.
+(pid=6648) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6648) Instructions for updating:
+(pid=6648) If using Keras pass *_constraint arguments to layers.
+(pid=6646) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6646) Instructions for updating:
+(pid=6646) If using Keras pass *_constraint arguments to layers.
+(pid=6651) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6651) Instructions for updating:
+(pid=6651) If using Keras pass *_constraint arguments to layers.
+(pid=6647) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6647) Instructions for updating:
+(pid=6647) If using Keras pass *_constraint arguments to layers.
+(pid=6643) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6643) Instructions for updating:
+(pid=6643) If using Keras pass *_constraint arguments to layers.
+(pid=6642) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6642) Instructions for updating:
+(pid=6642) If using Keras pass *_constraint arguments to layers.
+(pid=6587) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6587) Instructions for updating:
+(pid=6587) If using Keras pass *_constraint arguments to layers.
+(pid=6583) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6583) Instructions for updating:
+(pid=6583) If using Keras pass *_constraint arguments to layers.
+(pid=6644) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6644) Instructions for updating:
+(pid=6644) If using Keras pass *_constraint arguments to layers.
+(pid=6650) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6650) Instructions for updating:
+(pid=6650) If using Keras pass *_constraint arguments to layers.
+(pid=6649) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6649) Instructions for updating:
+(pid=6649) If using Keras pass *_constraint arguments to layers.
+(pid=6652) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6652) Instructions for updating:
+(pid=6652) If using Keras pass *_constraint arguments to layers.
+(pid=6594) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6594) Instructions for updating:
+(pid=6594) If using Keras pass *_constraint arguments to layers.
+(pid=6585) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6585) Instructions for updating:
+(pid=6585) If using Keras pass *_constraint arguments to layers.
+(pid=6596) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6596) Instructions for updating:
+(pid=6596) If using Keras pass *_constraint arguments to layers.
+(pid=6595) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6595) Instructions for updating:
+(pid=6595) If using Keras pass *_constraint arguments to layers.
+(pid=6591) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6591) Instructions for updating:
+(pid=6591) If using Keras pass *_constraint arguments to layers.
+(pid=6586) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6586) Instructions for updating:
+(pid=6586) If using Keras pass *_constraint arguments to layers.
+(pid=6598) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6598) Instructions for updating:
+(pid=6598) If using Keras pass *_constraint arguments to layers.
+(pid=6601) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6601) Instructions for updating:
+(pid=6601) If using Keras pass *_constraint arguments to layers.
+(pid=6588) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6588) Instructions for updating:
+(pid=6588) If using Keras pass *_constraint arguments to layers.
+(pid=6597) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6597) Instructions for updating:
+(pid=6597) If using Keras pass *_constraint arguments to layers.
+(pid=6582) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6582) Instructions for updating:
+(pid=6582) If using Keras pass *_constraint arguments to layers.
+(pid=6590) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6590) Instructions for updating:
+(pid=6590) If using Keras pass *_constraint arguments to layers.
+(pid=6592) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6592) Instructions for updating:
+(pid=6592) If using Keras pass *_constraint arguments to layers.
+(pid=6589) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6589) Instructions for updating:
+(pid=6589) If using Keras pass *_constraint arguments to layers.
+(pid=6584) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6584) Instructions for updating:
+(pid=6584) If using Keras pass *_constraint arguments to layers.
+(pid=6593) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=6593) Instructions for updating:
+(pid=6593) If using Keras pass *_constraint arguments to layers.
+(pid=7108) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+(pid=7108) Instructions for updating:
+(pid=7108) If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2023-01-24 15:54:35.698130 Training start---------------------------------------------------------------------------------------------------------------------------------------
+Epoch:  1
+(pid=6599) 2023-01-24 15:54:35,709      WARNING deprecation.py:30 -- DeprecationWarning: `env_index` has been deprecated. Use `episode.env_id` instead. This will raise an error in the future!
+(pid=6599) /usr/local/lib/python3.7/dist-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+(pid=6599)   ret = umr_sum(arr, axis, dtype, out, keepdims)
+(pid=6600) 2023-01-24 15:54:37.641151 2956
+(pid=6600) 2023-01-24 15:54:37.668701 2933
+(pid=6600) 2023-01-24 15:54:37.690625 2706
+/usr/local/lib/python3.7/dist-packages/numpy/core/_methods.py:151: RuntimeWarning: overflow encountered in reduce
+  ret = umr_sum(arr, axis, dtype, out, keepdims)
+(pid=6645) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6645) Instructions for updating:
+(pid=6645) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6648) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6648) Instructions for updating:
+(pid=6648) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6653) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6653) Instructions for updating:
+(pid=6653) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6599) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6599) Instructions for updating:
+(pid=6599) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6651) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6651) Instructions for updating:
+(pid=6651) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6642) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6642) Instructions for updating:
+(pid=6642) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6647) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6647) Instructions for updating:
+(pid=6647) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6643) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6643) Instructions for updating:
+(pid=6643) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6649) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6649) Instructions for updating:
+(pid=6649) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6646) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6646) Instructions for updating:
+(pid=6646) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6650) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6650) Instructions for updating:
+(pid=6650) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6594) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6594) Instructions for updating:
+(pid=6594) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6585) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6585) Instructions for updating:
+(pid=6585) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6589) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6589) Instructions for updating:
+(pid=6589) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6644) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6644) Instructions for updating:
+(pid=6644) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6587) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6587) Instructions for updating:
+(pid=6587) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6588) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6588) Instructions for updating:
+(pid=6588) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6590) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6590) Instructions for updating:
+(pid=6590) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6596) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6596) Instructions for updating:
+(pid=6596) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6601) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6601) Instructions for updating:
+(pid=6601) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6591) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6591) Instructions for updating:
+(pid=6591) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6597) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6597) Instructions for updating:
+(pid=6597) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6598) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6598) Instructions for updating:
+(pid=6598) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6592) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6592) Instructions for updating:
+(pid=6592) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6584) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6584) Instructions for updating:
+(pid=6584) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6593) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6593) Instructions for updating:
+(pid=6593) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=7108) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=7108) Instructions for updating:
+(pid=7108) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6652) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6652) Instructions for updating:
+(pid=6652) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6583) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6583) Instructions for updating:
+(pid=6583) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6595) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6595) Instructions for updating:
+(pid=6595) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6586) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6586) Instructions for updating:
+(pid=6586) Prefer Variable.assign which has equivalent behavior in 2.X.
+(pid=6582) WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+(pid=6582) Instructions for updating:
+(pid=6582) Prefer Variable.assign which has equivalent behavior in 2.X.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/ray/rllib/policy/tf_policy.py:852: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Variable.assign which has equivalent behavior in 2.X.
+Epoch:  2
+(pid=6600) 2023-01-24 15:54:43.494715 2683
+Epoch:  3
+(pid=6600) 2023-01-24 15:54:49.020241 2600
+Epoch:  4
+Epoch:  5
+Epoch:  6
+Epoch:  7
+(pid=6600) 2023-01-24 15:55:11.675683 2573
+(pid=6600) 2023-01-24 15:55:11.801743 2524
+Epoch:  8
+(pid=6600) 2023-01-24 15:55:17.281245 2508
+Epoch:  9
+(pid=6600) 2023-01-24 15:55:22.803481 2490
+Epoch:  10
+Epoch:  11
+(pid=6600) 2023-01-24 15:55:34.035497 2438
+Epoch:  12
+Epoch:  13
+(pid=6600) 2023-01-24 15:55:45.136721 2357
+Epoch:  14
+Epoch:  15
+Epoch:  16
+(pid=6600) 2023-01-24 15:56:03.739957 2353
+(pid=6600) 2023-01-24 15:56:03.909595 2347
+Epoch:  17
+Epoch:  18
+(pid=6600) 2023-01-24 15:56:15.118281 2325
+Epoch:  19
+(pid=6600) 2023-01-24 15:56:20.497960 2324
+Epoch:  20
+(pid=6600) 2023-01-24 15:56:25.900003 2265
+Epoch:  21
+Epoch:  22
+Epoch:  23
+Epoch:  24
+Epoch:  25
+Epoch:  26
+Epoch:  27
+Epoch:  28
+Epoch:  29
+(pid=6600) 2023-01-24 15:57:18.459593 2244
+Epoch:  30
+Epoch:  31
+(pid=6600) 2023-01-24 15:57:29.125554 2237
+Epoch:  32
+Epoch:  33
+Epoch:  34
+Epoch:  35
+Epoch:  36
+Epoch:  37
+(pid=6600) 2023-01-24 15:58:04.276955 2227
+Epoch:  38
+Epoch:  39
+Epoch:  40
+Epoch:  41
+Epoch:  42
+Epoch:  43
+Epoch:  44
+Epoch:  45
+Epoch:  46
+Epoch:  47
+Epoch:  48
+(pid=6600) 2023-01-24 15:59:05.559377 2199
+(pid=6600) 2023-01-24 15:59:05.754607 2186
+Epoch:  49
+Epoch:  50
+Epoch:  51
+Epoch:  52
+Epoch:  53
+Epoch:  54
+Epoch:  55
+Epoch:  56
+Epoch:  57
+Epoch:  58
+Epoch:  59
+Epoch:  60
+Epoch:  61
+Epoch:  62
+Epoch:  63
+Epoch:  64
+Epoch:  65
+Epoch:  66
+(pid=6600) 2023-01-24 16:00:47.186869 2179
+Epoch:  67
+(pid=6600) 2023-01-24 16:00:52.564888 2173
+Epoch:  68
+(pid=6600) 2023-01-24 16:00:59.727734 2163
+Epoch:  69
+Epoch:  70
+Epoch:  71
+(pid=6600) 2023-01-24 16:01:15.692802 2155
+Epoch:  72
+Epoch:  73
+Epoch:  74
+(pid=6600) 2023-01-24 16:01:33.121423 2145
+Epoch:  75
+Epoch:  76
+Epoch:  77
+Epoch:  78
+Epoch:  79
+Epoch:  80
+Epoch:  81
+Epoch:  82
+(pid=6600) 2023-01-24 16:02:17.110524 2133
+Epoch:  83
+(pid=6600) 2023-01-24 16:02:22.409780 2126
+Epoch:  84
+Epoch:  85
+Epoch:  86
+Epoch:  87
+Epoch:  88
+Epoch:  89
+Epoch:  90
+Epoch:  91
+Epoch:  92
+Epoch:  93
+(pid=6600) 2023-01-24 16:03:18.692743 2125
+Epoch:  94
+Epoch:  95
+Epoch:  96
+Epoch:  97
+Epoch:  98
+Epoch:  99
+Epoch:  100
+Epoch:  101
+Epoch:  102
+Epoch:  103
+Epoch:  104
+Epoch:  105
+Epoch:  106
+Epoch:  107
+Epoch:  108
+Epoch:  109
+Epoch:  110
+Epoch:  111
+Epoch:  112
+Epoch:  113
+Epoch:  114
+Epoch:  115
+(pid=6600) 2023-01-24 16:05:20.296459 2119
+Epoch:  116
+Epoch:  117
+Epoch:  118
+Epoch:  119
+Epoch:  120
+Epoch:  121
+Epoch:  122
+Epoch:  123
+Epoch:  124
+Epoch:  125
+Epoch:  126
+Epoch:  127
+Epoch:  128
+Epoch:  129
+Epoch:  130
+Epoch:  131
+Epoch:  132
+Epoch:  133
+Epoch:  134
+Epoch:  135
+Epoch:  136
+Epoch:  137
+Epoch:  138
+Epoch:  139
+Epoch:  140
+Epoch:  141
+Epoch:  142
+Epoch:  143
+Epoch:  144
+Epoch:  145
+Epoch:  146
+Epoch:  147
+Epoch:  148
+Epoch:  149
+Epoch:  150
+Epoch:  151
+Epoch:  152
+Epoch:  153
+Epoch:  154
+Epoch:  155
+Epoch:  156
+Epoch:  157
+Epoch:  158
+Epoch:  159
+Epoch:  160
+Epoch:  161
+Epoch:  162
+Epoch:  163
+Epoch:  164
+Epoch:  165
+Epoch:  166
+Epoch:  167
+Epoch:  168
+Epoch:  169
+Epoch:  170
+Epoch:  171
+Epoch:  172
+Epoch:  173
+Epoch:  174
+Epoch:  175
+Epoch:  176
+Epoch:  177
+Epoch:  178
+Epoch:  179
+Epoch:  180
+Epoch:  181
+Epoch:  182
+Epoch:  183
+Epoch:  184
+Epoch:  185
+Epoch:  186
+Epoch:  187
+Epoch:  188
+Epoch:  189
+Epoch:  190
+Epoch:  191
+Epoch:  192
+Epoch:  193
+Epoch:  194
+Epoch:  195
+Epoch:  196
+Epoch:  197
+Epoch:  198
+Epoch:  199
+Epoch:  200
+Epoch:  201
+Epoch:  202
+Epoch:  203
+Epoch:  204
+Epoch:  205
+Epoch:  206
+Epoch:  207
+Epoch:  208
+Epoch:  209
+Epoch:  210
+Epoch:  211
+Epoch:  212
+Epoch:  213
+Epoch:  214
+Epoch:  215
+Epoch:  216
+Epoch:  217
+Epoch:  218
+Epoch:  219
+Epoch:  220
+Epoch:  221
+Epoch:  222
+Epoch:  223
+Epoch:  224
+Epoch:  225
+Epoch:  226
+Epoch:  227
+Epoch:  228
+Epoch:  229
+Epoch:  230
+Epoch:  231
+Epoch:  232
+Epoch:  233
+Epoch:  234
+Epoch:  235
+Epoch:  236
+Epoch:  237
+Epoch:  238
+Epoch:  239
+Epoch:  240
+Epoch:  241
+Epoch:  242
+Epoch:  243
+Epoch:  244
+Epoch:  245
+Epoch:  246
+Epoch:  247
+Epoch:  248
+Epoch:  249
+Epoch:  250
+Epoch:  251
+Epoch:  252
+Epoch:  253
+Epoch:  254
+Epoch:  255
+Epoch:  256
+Epoch:  257
+Epoch:  258
+Epoch:  259
+Epoch:  260
+Epoch:  261
+Epoch:  262
+Epoch:  263
+Epoch:  264
+Epoch:  265
+Epoch:  266
+Epoch:  267
+Epoch:  268
+Epoch:  269
+Epoch:  270
+Epoch:  271
+Epoch:  272
+Epoch:  273
+Epoch:  274
+Epoch:  275
+Epoch:  276
+Epoch:  277
+Epoch:  278
+Epoch:  279
+Epoch:  280
+Epoch:  281
+Epoch:  282
+Epoch:  283
+Epoch:  284
+Epoch:  285
+Epoch:  286
+Epoch:  287
+Epoch:  288
+Epoch:  289
+Epoch:  290
+Epoch:  291
+Epoch:  292
+Epoch:  293
+Epoch:  294
+Epoch:  295
+Epoch:  296
+Epoch:  297
+Epoch:  298
+Epoch:  299
+Epoch:  300
+Epoch:  301
+Epoch:  302
+Epoch:  303
+Epoch:  304
+Epoch:  305
+Epoch:  306
+Epoch:  307
+Epoch:  308
+Epoch:  309
+Epoch:  310
+Epoch:  311
+Epoch:  312
+Epoch:  313
+Epoch:  314
+Epoch:  315
+Epoch:  316
+Epoch:  317
+Epoch:  318
+Epoch:  319
+Epoch:  320
+Epoch:  321
+Epoch:  322
+Epoch:  323
+Epoch:  324
+Epoch:  325
+Epoch:  326
+Epoch:  327
+Epoch:  328
+Epoch:  329
+Epoch:  330
+Epoch:  331
+Epoch:  332
+Epoch:  333
+Epoch:  334
+Epoch:  335
+Epoch:  336
+Epoch:  337
+Epoch:  338
+Epoch:  339
+Epoch:  340
+Epoch:  341
+Epoch:  342
+Epoch:  343
+Epoch:  344
+Epoch:  345
+Epoch:  346
+Epoch:  347
+Epoch:  348
+Epoch:  349
+Epoch:  350
+Epoch:  351
+Epoch:  352
+Epoch:  353
+Epoch:  354
+Epoch:  355
+Epoch:  356
+Epoch:  357
+Epoch:  358
+Epoch:  359
+Epoch:  360
+Epoch:  361
+Epoch:  362
+Epoch:  363
+Epoch:  364
+Epoch:  365
+Epoch:  366
+Epoch:  367
+Epoch:  368
+Epoch:  369
+Epoch:  370
+Epoch:  371
+Epoch:  372
+Epoch:  373
+Epoch:  374
+Epoch:  375
+Epoch:  376
+Epoch:  377
+Epoch:  378
+Epoch:  379
+Epoch:  380
+Epoch:  381
+Epoch:  382
+Epoch:  383
+Epoch:  384
+Epoch:  385
+Epoch:  386
+Epoch:  387
+Epoch:  388
+Epoch:  389
+Epoch:  390
+Epoch:  391
+Epoch:  392
+Epoch:  393
+Epoch:  394
+Epoch:  395
+Epoch:  396
+Epoch:  397
+Epoch:  398
+Epoch:  399
+Epoch:  400
+Epoch:  401
+Epoch:  402
+Epoch:  403
+Epoch:  404
+Epoch:  405
+Epoch:  406
+Epoch:  407
+Epoch:  408
+Epoch:  409
+Epoch:  410
+Epoch:  411
+Epoch:  412
+Epoch:  413
+Epoch:  414
+Epoch:  415
+Epoch:  416
+Epoch:  417
+Epoch:  418
+Epoch:  419
+Epoch:  420
+Epoch:  421
+Epoch:  422
+Epoch:  423
+Epoch:  424
+Epoch:  425
+Epoch:  426
+Epoch:  427
+Epoch:  428
+Epoch:  429
+Epoch:  430
+Epoch:  431
+Epoch:  432
+Epoch:  433
+Epoch:  434
+Epoch:  435
+Epoch:  436
+Epoch:  437
+Epoch:  438
+Epoch:  439
+Epoch:  440
+Epoch:  441
+Epoch:  442
+Epoch:  443
+Epoch:  444
+Epoch:  445
+Epoch:  446
+Epoch:  447
+Epoch:  448
+Epoch:  449
+Epoch:  450
+Epoch:  451
+Epoch:  452
+Epoch:  453
+Epoch:  454
+Epoch:  455
+Epoch:  456
+Epoch:  457
+Epoch:  458
+Epoch:  459
+Epoch:  460
+Epoch:  461
+Epoch:  462
+Epoch:  463
+Epoch:  464
+Epoch:  465
+Epoch:  466
+Epoch:  467
+Epoch:  468
+Epoch:  469
+Epoch:  470
+Epoch:  471
+Epoch:  472
+Epoch:  473
+Epoch:  474
+Epoch:  475
+Epoch:  476
+Epoch:  477
+Epoch:  478
+Epoch:  479
+Epoch:  480
+Epoch:  481
+Epoch:  482
+Epoch:  483
+Epoch:  484
+Epoch:  485
+Epoch:  486
+Epoch:  487
+Epoch:  488
+Epoch:  489
+Epoch:  490
+Epoch:  491
+Epoch:  492
+Epoch:  493
+Epoch:  494
+Epoch:  495
+Epoch:  496
+Epoch:  497
+Epoch:  498
+Epoch:  499
+Epoch:  500
+Epoch:  501
+Epoch:  502
+Epoch:  503
+Epoch:  504
+Epoch:  505
+Epoch:  506
+Epoch:  507
+Epoch:  508
+Epoch:  509
+Epoch:  510
+Epoch:  511
+Epoch:  512
+Epoch:  513
+Epoch:  514
+Epoch:  515
+Epoch:  516
+Epoch:  517
+Epoch:  518
+Epoch:  519
+Epoch:  520
+Epoch:  521
+Epoch:  522
+Epoch:  523
+Epoch:  524
+Epoch:  525
+Epoch:  526
+Epoch:  527
+Epoch:  528
+Epoch:  529
+Epoch:  530
+Epoch:  531
+Epoch:  532
+Epoch:  533
+Epoch:  534
+Epoch:  535
+Epoch:  536
+Epoch:  537
+Epoch:  538
+Epoch:  539
+Epoch:  540
+Epoch:  541
+Epoch:  542
+Epoch:  543
+Epoch:  544
+Epoch:  545
+Epoch:  546
+Epoch:  547
+Epoch:  548
+Epoch:  549
+Epoch:  550
+Epoch:  551
+Epoch:  552
+Epoch:  553
+Epoch:  554
+Epoch:  555
+Epoch:  556
+Epoch:  557
+Epoch:  558
+Epoch:  559
+Epoch:  560
+Epoch:  561
+Epoch:  562
+Epoch:  563
+Epoch:  564
+Epoch:  565
+Epoch:  566
+Epoch:  567
+Epoch:  568
+Epoch:  569
+Epoch:  570
+Epoch:  571
+Epoch:  572
+Epoch:  573
+Epoch:  574
+Epoch:  575
+Epoch:  576
+Epoch:  577
+Epoch:  578
+Epoch:  579
+Epoch:  580
+Epoch:  581
+Epoch:  582
+Epoch:  583
+Epoch:  584
+Epoch:  585
+Epoch:  586
+Epoch:  587
+Epoch:  588
+Epoch:  589
+Epoch:  590
+Epoch:  591
+Epoch:  592
+Epoch:  593
+Epoch:  594
+Epoch:  595
+Epoch:  596
+Epoch:  597
+Epoch:  598
+Epoch:  599
+Epoch:  600
+Epoch:  601
+Epoch:  602
+Epoch:  603
+Epoch:  604
+Epoch:  605
+Epoch:  606
+Epoch:  607
+Epoch:  608
+Epoch:  609
+Epoch:  610
+Epoch:  611
+Epoch:  612
+Epoch:  613
+Epoch:  614
+Epoch:  615
+Epoch:  616
+Epoch:  617
+Epoch:  618
+Epoch:  619
+Epoch:  620
+Epoch:  621
+Epoch:  622
+Epoch:  623
+Epoch:  624
+Epoch:  625
+Epoch:  626
+Epoch:  627
+Epoch:  628
+Epoch:  629
+Epoch:  630
+Epoch:  631
+Epoch:  632
+Epoch:  633
+Epoch:  634
+Epoch:  635
+Epoch:  636
+Epoch:  637
+Epoch:  638
+Epoch:  639
+Epoch:  640
+Epoch:  641
+Epoch:  642
+Epoch:  643
+Epoch:  644
+Epoch:  645
+Epoch:  646
+Epoch:  647
+Epoch:  648
+Epoch:  649
+Epoch:  650
+Epoch:  651
+Epoch:  652
+Epoch:  653
+Epoch:  654
+Epoch:  655
+Epoch:  656
+Epoch:  657
+Epoch:  658
+Epoch:  659
+Epoch:  660
+Epoch:  661
+Epoch:  662
+Epoch:  663
+Epoch:  664
+Epoch:  665
+Epoch:  666
+Epoch:  667
+Epoch:  668
+Epoch:  669
+Epoch:  670
+Epoch:  671
+Epoch:  672
+Epoch:  673
+Epoch:  674
+Epoch:  675
+Epoch:  676
+Epoch:  677
+Epoch:  678
+Epoch:  679
+Epoch:  680
+Epoch:  681
+Epoch:  682
+Epoch:  683
+Epoch:  684
+Epoch:  685
+Epoch:  686
+Epoch:  687
+Epoch:  688
+Epoch:  689
+Epoch:  690
+Epoch:  691
+Epoch:  692
+Epoch:  693
+Epoch:  694
+Epoch:  695
+Epoch:  696
+Epoch:  697
+Epoch:  698
+Epoch:  699
+Epoch:  700
+Epoch:  701
+Epoch:  702
+Epoch:  703
+Epoch:  704
+Epoch:  705
+Epoch:  706
+Epoch:  707
+Epoch:  708
+Epoch:  709
+Epoch:  710
+Epoch:  711
+Epoch:  712
+Epoch:  713
+Epoch:  714
+Epoch:  715
+Epoch:  716
+Epoch:  717
+Epoch:  718
+Epoch:  719
+Epoch:  720
+Epoch:  721
+Epoch:  722
+Epoch:  723
+Epoch:  724
+Epoch:  725
+Epoch:  726
+Epoch:  727
+Epoch:  728
+Epoch:  729
+Epoch:  730
+Epoch:  731
+Epoch:  732
+Epoch:  733
+Epoch:  734
+Epoch:  735
+Epoch:  736
+Epoch:  737
+Epoch:  738
+Epoch:  739
+Epoch:  740
+Epoch:  741
+Epoch:  742
+Epoch:  743
+Epoch:  744
+Epoch:  745
+Epoch:  746
+Epoch:  747
+Epoch:  748
+Epoch:  749
+Epoch:  750
+Epoch:  751
+Epoch:  752
+Epoch:  753
+Epoch:  754
+Epoch:  755
+Epoch:  756
+Epoch:  757
+Epoch:  758
+Epoch:  759
+Epoch:  760
+Epoch:  761
+Epoch:  762
+Epoch:  763
+Epoch:  764
+Epoch:  765
+Epoch:  766
+Epoch:  767
+Epoch:  768
+Epoch:  769
+Epoch:  770
+Epoch:  771
+Epoch:  772
+Epoch:  773
+Epoch:  774
+Epoch:  775
+Epoch:  776
+Epoch:  777
+Epoch:  778
+Epoch:  779
+Epoch:  780
+Epoch:  781
+Epoch:  782
+Epoch:  783
+Epoch:  784
+Epoch:  785
+Epoch:  786
+Epoch:  787
+Epoch:  788
+Epoch:  789
+Epoch:  790
+Epoch:  791
+Epoch:  792
+Epoch:  793
+Epoch:  794
+Epoch:  795
+Epoch:  796
+Epoch:  797
+Epoch:  798
+Epoch:  799
+Epoch:  800
+Epoch:  801
+Epoch:  802
+Epoch:  803
+Epoch:  804
+Epoch:  805
+Epoch:  806
+Epoch:  807
+Epoch:  808
+Epoch:  809
+Epoch:  810
+Epoch:  811
+Epoch:  812
+Epoch:  813
+Epoch:  814
+Epoch:  815
+Epoch:  816
+Epoch:  817
+Epoch:  818
+Epoch:  819
+Epoch:  820
+Epoch:  821
+Epoch:  822
+Epoch:  823
+Epoch:  824
+Epoch:  825
+Epoch:  826
+Epoch:  827
+Epoch:  828
+Epoch:  829
+Epoch:  830
+Epoch:  831
+Epoch:  832
+Epoch:  833
+Epoch:  834
+Epoch:  835
+Epoch:  836
+Epoch:  837
+Epoch:  838
+Epoch:  839
+Epoch:  840
+Epoch:  841
+Epoch:  842
+Epoch:  843
+Epoch:  844
+Epoch:  845
+Epoch:  846
+Epoch:  847
+Epoch:  848
+Epoch:  849
+Epoch:  850
+Epoch:  851
+Epoch:  852
+Epoch:  853
+Epoch:  854
+Epoch:  855
+Epoch:  856
+Epoch:  857
+Epoch:  858
+Epoch:  859
+Epoch:  860
+Epoch:  861
+Epoch:  862
+Epoch:  863
+Epoch:  864
+Epoch:  865
+Epoch:  866
+Epoch:  867
+Epoch:  868
+Epoch:  869
+Epoch:  870
+Epoch:  871
+Epoch:  872
+Epoch:  873
+Epoch:  874
+Epoch:  875
+Epoch:  876
+Epoch:  877
+Epoch:  878
+Epoch:  879
+Epoch:  880
+Epoch:  881
+Epoch:  882
+Epoch:  883
+Epoch:  884
+Epoch:  885
+Epoch:  886
+Epoch:  887
+Epoch:  888
+Epoch:  889
+Epoch:  890
+Epoch:  891
+Epoch:  892
+Epoch:  893
+Epoch:  894
+Epoch:  895
+Epoch:  896
+Epoch:  897
+Epoch:  898
+Epoch:  899
+Epoch:  900
+Epoch:  901
+Epoch:  902
+Epoch:  903
+Epoch:  904
+Epoch:  905
+Epoch:  906
+Epoch:  907
+Epoch:  908
+Epoch:  909
+Epoch:  910
+Epoch:  911
+Epoch:  912
+Epoch:  913
+Epoch:  914
+Epoch:  915
+Epoch:  916
+Epoch:  917
+Epoch:  918
+Epoch:  919
+Epoch:  920
+Epoch:  921
+Epoch:  922
+Epoch:  923
+Epoch:  924
+Epoch:  925
+Epoch:  926
+Epoch:  927
+Epoch:  928
+Epoch:  929
+Epoch:  930
+Epoch:  931
+Epoch:  932
+Epoch:  933
+Epoch:  934
+Epoch:  935
+Epoch:  936
+Epoch:  937
+Epoch:  938
+Epoch:  939
+Epoch:  940
+Epoch:  941
+Epoch:  942
+Epoch:  943
+Epoch:  944
+Epoch:  945
+Epoch:  946
+Epoch:  947
+Epoch:  948
+Epoch:  949
+Epoch:  950
+Epoch:  951
+Epoch:  952
+Epoch:  953
+Epoch:  954
+Epoch:  955
+Epoch:  956
+Epoch:  957
+Epoch:  958
+Epoch:  959
+Epoch:  960
+Epoch:  961
+Epoch:  962
+Epoch:  963
+Epoch:  964
+Epoch:  965
+Epoch:  966
+Epoch:  967
+Epoch:  968
+Epoch:  969
+Epoch:  970
+Epoch:  971
+Epoch:  972
+Epoch:  973
+Epoch:  974
+Epoch:  975
+Epoch:  976
+Epoch:  977
+Epoch:  978
+Epoch:  979
+Epoch:  980
+Epoch:  981
+Epoch:  982
+Epoch:  983
+Epoch:  984
+Epoch:  985
+Epoch:  986
+Epoch:  987
+Epoch:  988
+Epoch:  989
+Epoch:  990
+Epoch:  991
+Epoch:  992
+Epoch:  993
+Epoch:  994
+Epoch:  995
+Epoch:  996
+Epoch:  997
+Epoch:  998
+Epoch:  999
+Epoch:  1000
+Epoch:  1001
+2119
+------------------------------------------------------------------------------------------ Floppa
+------------------------------------------------------------------------------------------ Training done
+/root/ray_results/PPO_jss_env_2023-01-24_15-54-299461rjgm/checkpoint_1001/checkpoint-1001
+
+wandb: Waiting for W&B process to finish, PID 6400
+wandb: Program ended successfully.
+wandb: Find user logs for this run at: /jobshop/wandb/offline-run-20230124_155426-nqd52zfm/logs/debug.log
+wandb: Find internal logs for this run at: /jobshop/wandb/offline-run-20230124_155426-nqd52zfm/logs/debug-internal.log
+wandb: Run summary:
+wandb:                             episode_reward_max 168.24242
+wandb:                             episode_reward_min 67.23232
+wandb:                            episode_reward_mean 167.46687
+wandb:                               episode_len_mean 601.4185
+wandb:                             episodes_this_iter 197
+wandb:                            num_healthy_workers 32
+wandb:                                timesteps_total 90202112
+wandb:                                 episodes_total 149447
+wandb:                             training_iteration 1001
+wandb:                                      timestamp 1674581398
+wandb:                               time_this_iter_s 5.83878
+wandb:                                   time_total_s 5697.27173
+wandb:                             time_since_restore 5697.27173
+wandb:                        timesteps_since_restore 0
+wandb:                       iterations_since_restore 1001
+wandb:                  custom_metrics/make_span_mean 2129.205
+wandb:                   custom_metrics/make_span_min 2125
+wandb:                   custom_metrics/make_span_max 2445
+wandb:                  sampler_perf/mean_env_wait_ms 1.76887
+wandb:        sampler_perf/mean_raw_obs_processing_ms 0.27564
+wandb:                 sampler_perf/mean_inference_ms 0.79214
+wandb:         sampler_perf/mean_action_processing_ms 0.08393
+wandb:                          timers/sample_time_ms 2152.843
+wandb:                       timers/sample_throughput 41857.205
+wandb:                            timers/load_time_ms 42.03
+wandb:                         timers/load_throughput 2143974.109
+wandb:                           timers/learn_time_ms 3262.311
+wandb:                        timers/learn_throughput 27622.132
+wandb:                          timers/update_time_ms 8.057
+wandb:                         info/num_steps_sampled 90202112
+wandb:                         info/num_steps_trained 90202112
+wandb:                          perf/cpu_util_percent 52.74286
+wandb:                          perf/ram_util_percent 25.6
+wandb:                         perf/gpu_util_percent0 0.00286
+wandb:                        perf/vram_util_percent0 0.052
+wandb:       info/learner/default_policy/cur_kl_coeff 0.0
+wandb:             info/learner/default_policy/cur_lr 8e-05
+wandb:         info/learner/default_policy/total_loss 1.11317
+wandb:        info/learner/default_policy/policy_loss -0.00531
+wandb:            info/learner/default_policy/vf_loss 1.41266
+wandb:   info/learner/default_policy/vf_explained_var 0.99964
+wandb:                 info/learner/default_policy/kl 0.00355
+wandb:            info/learner/default_policy/entropy 0.03185
+wandb:      info/learner/default_policy/entropy_coeff 0.00204
+wandb:                                       _runtime 5732
+wandb:                                     _timestamp 1674581398
+wandb:                                          _step 1000
+wandb: Run history:
+wandb:                             episode_reward_max ▁▇▇█████████████████████████████████████
+wandb:                             episode_reward_min ▁▅▅▆▆▆▆▇▆▆▇▆▆▆▇▆▇▇▇▇▇▆▆█▇█▇▇▇▇▇▇▇▇██▇▇▇▇
+wandb:                            episode_reward_mean ▁▅▅▆▇███████████████████████████████████
+wandb:                               episode_len_mean █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                             episodes_this_iter ▁▇▂▁▁▁▁▂▆█▇▃▁▁▁▁▁▃▂▂▂▂▄▁▁▁▃▅▁▁▁▁▁▁▆▇▃▁▁▁
+wandb:                            num_healthy_workers ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                                timesteps_total ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                                 episodes_total ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                             training_iteration ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                                      timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                               time_this_iter_s ▅▄▃▁▁▁▁▂▄▃▄▄▃▃▄▃▅▄▅▅▄▄▄▄▄▆▅▆▅▄▆▆█▆▇█▆▇█▇
+wandb:                                   time_total_s ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                             time_since_restore ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                        timesteps_since_restore ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                       iterations_since_restore ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                  custom_metrics/make_span_mean █▄▃▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                   custom_metrics/make_span_min █▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                   custom_metrics/make_span_max █▅▄▄▃▄▄▃▃▄▃▄▂▄▃▄▂▂▁▃▃▄▃▂▃▁▃▃▃▃▃▂▂▂▂▂▂▃▁▃
+wandb:                  sampler_perf/mean_env_wait_ms ▅█▇▇▅▄▄▃▃▃▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:        sampler_perf/mean_raw_obs_processing_ms ▁█▇▅▄▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+wandb:                 sampler_perf/mean_inference_ms ▇█▆▅▄▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:         sampler_perf/mean_action_processing_ms ▄█▆▅▄▃▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                          timers/sample_time_ms █▇▇▂▂▁▁▂▂▂▂▂▂▃▃▂▃▂▂▂▃▃▂▃▂▂▃▂▃▃▃▃▃▃▂▃▃▂▃▂
+wandb:                       timers/sample_throughput ▁▂▂▆▇██▇▇▇▇▆▇▆▆▇▆▇▇▇▆▆▇▆▇▇▆▇▆▆▆▆▆▆▇▆▆▆▆▇
+wandb:                            timers/load_time_ms █▄▃▄▃▃▃▂▂▄▃▃▂▂▂▁▂▃▂▁▂▂▁▁▂▁▂▂▂▂▂▂▂▂▂▂▂▂▂▁
+wandb:                         timers/load_throughput ▁▅▅▄▆▅▆▇▇▅▆▅▇▇▇▇▆▆▇█▇▇██▇█▇▇▇▇▇▆▇▇▆▇▇▆▇█
+wandb:                           timers/learn_time_ms █▁▂▂▁▁▁▁▂▁▃▁▁▂▃▃▂▃▄▄▅▄▃▂▄▄▆▃▅▅▆▂▅▄▄▄▄█▅▄
+wandb:                        timers/learn_throughput ▁█▇▇████▇█▆██▇▆▆▇▆▅▅▄▅▆▇▅▅▃▆▄▄▃▇▄▅▅▅▅▁▄▅
+wandb:                          timers/update_time_ms ▁▂▂▅▃▄█▅▅▅▄▄▄▄▇▄▆▅▄▄▄▅▅▄▅▅▄▆▅▅█▆▄▅▄▅▅▆▄▅
+wandb:                         info/num_steps_sampled ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                         info/num_steps_trained ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                          perf/cpu_util_percent █▆▄▃▂▃▃▅▁▄▄▃▅▃▄▄▄▅▄▃▄▅▄▅▅▄▄▃▅▆▄▅▄▅▃▃▅▄▄▄
+wandb:                          perf/ram_util_percent ▁▂▂▂▂▃▂▃▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▇▆▇▇▇▇▇▇███
+wandb:                         perf/gpu_util_percent0 ▅▇█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                        perf/vram_util_percent0 █▆▇▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:       info/learner/default_policy/cur_kl_coeff █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:             info/learner/default_policy/cur_lr █▇▆▅▄▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:         info/learner/default_policy/total_loss ██▄▃▂▂▁▁▂▄▂▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁
+wandb:        info/learner/default_policy/policy_loss ▂▁▃▅▅▆▆▄▅▅▆▇▇▆▆█▅▆▆▇▆▆▆▅▇▇▇▇▆▆▅▇▅▇▅▅▆▇▆▇
+wandb:            info/learner/default_policy/vf_loss ██▄▃▂▂▁▁▂▄▂▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁
+wandb:   info/learner/default_policy/vf_explained_var ▁▅▇▇▇████▇██████████████████████████████
+wandb:                 info/learner/default_policy/kl █▆▅▃▄▃▂▃▅▂▃▂▁▂▄▂▂▁▂▂▂▁▃▁▂▃▄▃▂▁▂▂▂▂▁▃▂▂▃▂
+wandb:            info/learner/default_policy/entropy █▄▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      info/learner/default_policy/entropy_coeff ▁▂▃▄▅▆██████████████████████████████████
+wandb:                                       _runtime ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                                     _timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                                          _step ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /jobshop/wandb/offline-run-20230124_155426-nqd52zfm

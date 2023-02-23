@@ -10,6 +10,7 @@ import numpy as np
 import ray.tune.integration.wandb as wandb_tune
 
 from ray.rllib.agents.ppo import PPOTrainer
+from ray.tune import register_env
 
 from CustomCallbacks import *
 from models import *
@@ -22,6 +23,10 @@ from ray.rllib.models import ModelCatalog
 
 from ray.tune.utils import flatten_dict
 from ray.rllib.utils.framework import try_import_tf
+from pathlib import Path
+import imageio
+
+import datetime
 
 tf1, tf, tfv = try_import_tf()
 
@@ -57,15 +62,20 @@ def _handle_result(result: Dict) -> Tuple[Dict, Dict]:
     config_update.pop("callbacks", None)  # Remove callbacks
     return log, config_update
 
+def env_creator(env_config):
+    from env.JssEnv import JssEnv
+    return JssEnv(**env_config)
+
+register_env("jss_env", env_creator)
 
 def train_func():
     default_config = {
-        'env': 'JSSEnv:jss-v1',
+        'env': 'jss_env',
         'seed': 0,
         'framework': 'tf',
         'log_level': 'WARN',
         'num_gpus': 1,
-        'instance_path': 'instances/ta41',
+        'instance_path': 'instances/rl500',
         'evaluation_interval': None,
         'metrics_smoothing_episodes': 2000,
         'gamma': 1.0,
@@ -123,7 +133,10 @@ def train_func():
 
     config = with_common_config(config)
     config['seed'] = 0
-    config['callbacks'] = CustomCallbacks
+
+    storage = Storage.options(name="global_storage").remote()
+    my_callback = CustomCallbacks()
+    config['callbacks'] = lambda : my_callback
     config['train_batch_size'] = config['sgd_minibatch_size']
 
     config['lr'] = config['lr_start']
@@ -146,16 +159,49 @@ def train_func():
 
     start_time = time.time()
     trainer = PPOTrainer(config=config)
+    #trainer.restore("/root/ray_results/PPO_jss_env_2023-01-30_18-34-35mfc2hfe7/checkpoint_203/checkpoint-203")
+    epoch = 0
+    print(datetime.datetime.now(), "Training start---------------------------------------------------------------------------------------------------------------------------------------")
     while start_time + stop['time_total_s'] > time.time():
+    #while epoch < 1001:
+        epoch = epoch + 1
+        print("Epoch: ", epoch)
         result = trainer.train()
         result = wandb_tune._clean_log(result)
         log, config_update = _handle_result(result)
         wandb.log(log)
         # wandb.config.update(config_update, allow_val_change=True)
     # trainer.export_policy_model("/home/jupyter/JSS/JSS/models/")
-
+    best_makespan, best_solution, stepList = ray.get(storage.get_best_solution.remote())
+    print(best_makespan)
+    print("------------------------------------------------------------------------------------------ Floppa")
     ray.shutdown()
+    print("------------------------------------------------------------------------------------------ Training done")
+    #renderSolution(stepList)
+    #print(trainer.save())
+
+def renderSolution(stepList:list):
+    env = gym.make(
+            "JSSEnv:jss-v1",
+            env_config={
+                "instance_path": f"{str(Path(__file__).parent.absolute())}/instances/ta41"
+            },
+        )
+    env.reset()
+        # for every machine give the jobs to process in order for every machine
+    images = []
+
+    for i in range(len(stepList)):
+        env.step(stepList[i])
+        temp_image = env.render().to_image()
+        images.append(imageio.imread(temp_image))
+        print(i)
+            
+    temp_image = env.render().to_image()
+    images.append(imageio.imread(temp_image))
+    imageio.mimsave("test.gif", images)
 
 
 if __name__ == "__main__":
+    print("HIIIIIIIIIIIIIIIIIIII")
     train_func()
